@@ -1,0 +1,32 @@
+.container {
+    width: 400px;
+    height: 280px;
+    position: absolute;
+    top:-200px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: 0.4px solid gray;
+    background-color: rgb(5, 138, 142);
+    border-radius: 50px;
+    padding: 45px;
+}
+
+.title-field, .category-field {
+    height: 33px;
+    border-radius: 30px;
+    border: none;
+    width: 200px;
+    padding: 10px;
+    background-color: ghostwhite;
+    color: darkgreen;
+}
+
+.description-field {
+    border-radius: 30px;
+    border: none;
+    height: 100px;
+    width: 200px;
+    padding: 15px;
+}

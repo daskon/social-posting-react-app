@@ -1,0 +1,41 @@
+.navbar {
+    background-color: rgb(41, 179, 197);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 4px;
+    height: 70px;
+}
+
+.nav-links {
+   text-align: center;
+   margin-right: 200px;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    font-size:larger;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-name {
+    padding: 5px;
+}
+
+.user-image {
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.logout-button {
+    border-radius: 10%;
+    background-color: cadetblue;
+    color: black;
+    cursor: pointer;
+}
