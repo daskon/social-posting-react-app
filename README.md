@@ -4,7 +4,7 @@
 
 ### `npm start`
 
-## Firestore DB tables
+## Firestore DB Collection
 
  `posts`        { id, category, description, title, userID, username }
  `likes`        { postId, userId }
