@@ -5,10 +5,8 @@
 ### `npm start`
 
 ##Firestore DB tables
-
-`table name`  `fields`
- posts        { id, category, description, title, userID, username }
- likes        { postId, userId }
+ `posts`        { id, category, description, title, userID, username }
+ `likes`        { postId, userId }
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
