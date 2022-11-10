@@ -30,3 +30,13 @@
     width: 200px;
     padding: 15px;
 }
+
+.submit-btn {
+    border-radius: 30px;
+    border: 0.3px solid white;
+    padding: 10px;
+    width: 100px;
+    font-weight: bold;
+    background-color:rgb(13, 117, 120);
+    cursor: pointer;
+}

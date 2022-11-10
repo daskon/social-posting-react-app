@@ -34,6 +34,7 @@ const CreateForm = () => {
     const onCreateForm = async (data: FormDataType) => {
         await addDoc(postData,{
             ...data,
+            id: user?.uid,
             username: user?.displayName,
             userId: user?.uid
         });
