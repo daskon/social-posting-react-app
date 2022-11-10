@@ -12,7 +12,7 @@ export interface PostInterface {
     category: string
 }
 
-export const Main = () => {
+const Main = () => {
     const [postList, setPostList] = useState<PostInterface[] | null>(null);
     const postData = collection(db, "posts");
 
@@ -38,3 +38,5 @@ export const Main = () => {
     </div>
   )
 }
+
+export default Main

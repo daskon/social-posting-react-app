@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 import { Provider } from 'react-redux';
 import './App.css';
 import { Login } from './pages/login';
 import { store } from './redux/store';
-import { Main } from './pages/main/main';
-import Navbar from './components/navbar/navbar';
-import CreatePost from './pages/create-post/create-post';
+
+const Main = lazy(() => import("./pages/main/main"));
+const Navbar = lazy(() => import("./components/navbar/navbar"));
+const CreatePost = lazy(() => import("./pages/create-post/create-post"));
 
 function App() {
   return (
@@ -14,11 +15,13 @@ function App() {
       <Provider store={store}>
          <Router>
           <Navbar />
-         <Routes>
-           <Route path='/' element={<Main />} />
-           <Route path='/login' element={<Login />} />
-           <Route path='/create-post' element={<CreatePost />} />
-         </Routes>
+          <Suspense fallback={<div>Loading...</div>}>
+          <Routes>
+            <Route path='/' element={<Main />} />
+            <Route path='/login' element={<Login />} />
+            <Route path='/create-post' element={<CreatePost />} />
+          </Routes>
+         </Suspense>
       </Router>
       </Provider>
     </div>
